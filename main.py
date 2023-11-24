@@ -13,7 +13,7 @@ match sys.argv[1]:
         Proxmuxel.containers_range_stop(start_by, end_by)    
 
     case "bash":
-        command = int(sys.argv[2])
+        command = sys.argv[2]
         start_by = int(sys.argv[3])
         end_by = int(sys.argv[4])
         Proxmuxel.containers_range_runnig_bash(start_by, end_by, command)    
